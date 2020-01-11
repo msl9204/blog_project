@@ -1,0 +1,62 @@
+body {
+    background-image: url('/static/diary-968592.jpg');
+    background-size: cover;
+
+
+}
+
+.main_banner{
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 550px;
+    padding: 10px;
+    box-shadow: 0px 0px 73px -23px rgba(0,0,0,0.75);
+
+}
+
+nav{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn{
+    background-image: url('/static/noun_menu_2642562.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.dropbtn:hover .dropdown-contents{
+    display: block;
+
+}
+
+.dropbtn .dropdown-contents{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+
+.dropbtn .dropdown-contents a{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding: 50px;
+    
+}
+
