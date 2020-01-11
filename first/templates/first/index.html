@@ -9,30 +9,101 @@
     <title>My_blog</title>
 </head>
 <body>
-    <div class=main_banner>
-        <h1>Soo's Blog</h1>
-
-        <div>명언 불러오기 항목</div>
-
-        <div>링크들</div>
-
-        <div>태그보여주기</div>
-    
-    </div>
-
 
     <div class="nav">
-        <input type="checkbox" class="dropbtn">
-            <div class="dropdown-contents">
-                <a href="#">Link1</a>
-                <a href="#">Link2</a>
-                <a href="#">Link3</a>
+        <button onclick="toggle()" class="dropbtn"><img class="img-button" src="/static/noun_list_white_2.png" alt=""></button>
+            <div id="drop_id" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Post</a>
+                <a href="#">Project</a>
             </div>
         </div>
 
     </div>
 
 
+    <div class=main_banner>
+        <img class="home-icon" src="/static/home_icon.png" alt="">
+        <h1>Soo's SafeHouse</h1>
+
+        <div class="border-line"></div>
+
+        <div>안녕하세요 ^^</div>
+
+        <div class="border-line"></div>
+
+
+
+        <a class="linkbox" href="#"><img src="/static/insta.png" alt=""></a>
+        <a class="linkbox" href="#"><img src="/static/git.png" alt=""></a>
+        <a class="linkbox" href="#"><img src="/static/mail.png" alt=""></a>
+
+        <div class="border-line"></div>
+
+        <div class="tag-container">
+            <div class="col">
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">CSS</a>
+                <a class="tagbox" href="#">JAVASCRIPT</a>
+                <a class="tagbox" href="#">pythonNNNNN</a>
+            </div>
+            <div class="col">
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+            </div>
+            <div class="col">
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+            </div>
+            <div class="col">
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+                <a class="tagbox" href="#">python</a>
+            </div>
+
+
+
+        </div>
+
+
+    
+    </div>
+
+
+
 
 </body>
+
+<script>
+function toggle() {
+    document.getElementById("drop_id").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.img-button')) {
+        console.log('111')
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+
+
+</script>
+
+
+
+
 </html>
