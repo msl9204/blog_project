@@ -48,6 +48,7 @@ body{
     display: block;
 }
 
+
 #drop_id a:nth-child(2)::after {
     position: absolute;
     content: ">";
@@ -69,6 +70,29 @@ body{
 
 .is-active {
     display: block;
+}
+
+
+.about-hidden a:first-child {
+    background-color: #c2c2c2;
+
+}
+
+.about-hidden a:first-child::before {
+    content: "<      ";
+    white-space: pre;
+    font-weight: bold;
+}
+
+.post a:first-child {
+    background-color: #c2c2c2;
+
+}
+
+.post a:first-child::before {
+    content: "<      ";
+    white-space: pre;
+    font-weight: bold;
 }
 
 
