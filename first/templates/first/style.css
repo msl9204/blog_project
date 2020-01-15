@@ -2,6 +2,7 @@ body{
     background-image: url('/static/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .dropbtn {
@@ -72,6 +73,12 @@ body{
     display: block;
 }
 
+.about-hidden a {
+    display: flex;
+    align-items: center;
+    
+}
+
 
 .about-hidden a:first-child {
     background-color: #c2c2c2;
@@ -79,10 +86,55 @@ body{
 }
 
 .about-hidden a:first-child::before {
-    content: "<      ";
+    content: "<   ";
     white-space: pre;
     font-weight: bold;
 }
+.about-hidden a:nth-child(3)::before{
+    background-image: url('/static/aboutme.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+    content:"";
+}
+
+.about-hidden a:nth-child(4)::before{
+    background-image: url('/static/insta.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+    content:"";
+}
+
+.about-hidden a:nth-child(5)::before{
+    background-image: url('/static/git.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+    content:"";
+}
+
+.about-hidden a:nth-child(6)::before{
+    background-image: url('/static/mail.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+    content:"";
+}
+
+
 
 .post a:first-child {
     background-color: #c2c2c2;
@@ -90,7 +142,7 @@ body{
 }
 
 .post a:first-child::before {
-    content: "<      ";
+    content: "<   ";
     white-space: pre;
     font-weight: bold;
 }
@@ -174,3 +226,103 @@ body{
     color: red;
 
 }
+
+.main-article {
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 73px -23px rgba(0,0,0,0.75);
+    overflow-y: hidden;
+
+}
+
+.article-type {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-button {
+    margin-top: 20px;
+    border: 1px solid rgba(0,0, 0, 0.1);
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1);
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.home-button a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/static/home.png');
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+
+}
+
+.main-article .container {
+    margin-top: 70px;
+    text-align: left;
+    padding: 0 100px;
+}
+
+.main-article .container .sub-container {
+    border-bottom: 1px solid rgba(0,0, 0, 0.1);
+}
+
+.main-article .container .article-name{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.main-article .container .article-describe{
+    margin-top: 10px;
+    text-indent: 30px;
+
+}
+
+.main-article .container .read-button {
+    margin: 20px 0 20px 0;
+    width: 100px;
+    height: 50px;
+
+
+}
+
+
+.main-article .container .read-button a{
+    border: 1px solid rgba(0,0, 0, 0.2);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    display: flex;
+    padding: 15px 40px 15px 40px;
+    overflow: hidden;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+/* .main-article .container .read-button::after{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 100px;
+    content: " ";
+} */
