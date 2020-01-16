@@ -1,49 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Home - Soo's Blog</title>
-</head>
-<body>
-
-    <div class="nav">
-        <button class="dropbtn"><img class="img-button" src="/static/noun_list_white_2.png" alt=""></button>
-            <div id="drop_id" class="dropdown-content">
-                <a href="/first/templates/first/index.html">Home</a>
-                <a href="#">About</a>
-                <a href="#">Post</a>
-                <a href="/first/templates/first/all_project.html">Project</a>
-            </div>
+{% extends 'first/base.html' %}
+{% load static %}
 
 
-        <div class="about-hidden dropdown-content">
-            <a href="#">back</a>
-            <a href="#">Soo's SafeHouse</a>
-            <a href="#">about me</a>
-            <a href="#">insta</a>
-            <a href="#">github</a>
-            <a href="#">email</a>
+{% block main_banner %}
 
-        </div>
-
-        <div class="post dropdown-content">
-            <a href="#">back</a>
-            <a href="#">All Post</a>
-            <a href="#">Python</a>
-            <a href="#">SQL</a>
-
-
-
-            
-        </div>
-    </div>
-
-
-    <div class=main_banner>
+    <div class="main_banner">
         <img class="home-icon" src="/static/home_icon.png" alt="">
         <h1>Soo's SafeHouse</h1>
 
@@ -91,18 +52,8 @@
 
         </div>
 
-
-    
     </div>
 
+    {% endblock %}
 
 
-
-</body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/first/templates/first/nav_event.js"></script>
-
-
-
-</html>

@@ -1,43 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title> All Project - Soo's Blog</title>
-</head>
-<body>
-
-    <div class="nav">
-        <button class="dropbtn"><img class="img-button" src="/static/noun_list_white_2.png" alt=""></button>
-            <div id="drop_id" class="dropdown-content">
-                <a href="/first/templates/first/index.html">Home</a>
-                <a href="#">About</a>
-                <a href="#">Post</a>
-                <a href="/first/templates/first/all_project.html">Project</a>
-            </div>
+{% extends 'first/base.html' %}
+{% load static %}
 
 
-        <div class="about-hidden dropdown-content">
-            <a href="#">back</a>
-            <a href="#">Soo's SafeHouse</a>
-            <a href="#">about me</a>
-            <a href="#">insta</a>
-            <a href="#">github</a>
-            <a href="#">email</a>
 
-        </div>
-
-        <div class="post dropdown-content">
-            <a href="#">back</a>
-            <a href="#">All Post</a>
-            <a href="#">Python</a>
-            <a href="#">SQL</a>
-            
-        </div>
-    </div>
+{% block main_article %}
 
     <article class="main-article">
         <h1 class="article-type">Title</h1>
@@ -103,8 +69,4 @@
 
     </article>
     
-</body>
-
-<script src="/first/templates/first/nav_event.js"></script>
-
-</html>
+{% endblock %}
