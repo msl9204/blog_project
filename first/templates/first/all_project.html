@@ -7,58 +7,21 @@
 
     <article class="main-article">
         <h1 class="article-type">Title</h1>
-        <div class="home-button"><a href="/first/templates/first/index.html"></a></div>
+        <div class="home-button"><a href="{% url 'index' %}"></a></div>
 
         <div class="container">
+            {% for item in art_list %}
             <div class="sub-container">
                 <div class="article-name">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, mollitia.
-                </div>
-                <div class="article-describe">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo.
-                </div>
-                <div class="read-button"><a href="#">Read...</a></div>
-            </div>
+                    <a href="{% url 'detail' pk=item.pk %}">{{ item.title }}</a>
 
-            <div class="sub-container">
-                <div class="article-name">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, mollitia.
                 </div>
                 <div class="article-describe">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo.
                 </div>
-                <div class="read-button"><a href="#">Read...</a></div>
+                <div class="read-button"><a href="{% url 'detail' pk=item.pk %}">Read...</a></div>
             </div>
-
-            <div class="sub-container">
-                <div class="article-name">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, mollitia.
-                </div>
-                <div class="article-describe">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo.
-                </div>
-                <div class="read-button"><a href="#">Read...</a></div>
-            </div>
-
-            <div class="sub-container">
-                <div class="article-name">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, mollitia.
-                </div>
-                <div class="article-describe">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo.
-                </div>
-                <div class="read-button"><a href="#">Read...</a></div>
-            </div>
-
-            <div class="sub-container">
-                <div class="article-name">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, mollitia.
-                </div>
-                <div class="article-describe">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illo.
-                </div>
-                <div class="read-button"><a href="#">Read...</a></div>
-            </div>
+            {% endfor %}
 
 
 

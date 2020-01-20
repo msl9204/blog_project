@@ -1,0 +1,33 @@
+{% extends 'first/base.html' %}
+{% load static %}
+
+
+
+{% block detail %}
+
+    <article class="main-article">
+        <h1 class="article-type">{{ art.title }}</h1>
+
+        <div class="article-date">{{ art.date }}</div>
+        <div class="back-button"><a class="button-a-back" href="#"></a></div>
+        <div class="title-line"></div>
+
+
+        <div class="container">
+            <div class="article-detail">
+                {{ art.gfm | safe }}
+            </div>
+
+  
+
+
+
+
+        </div>
+
+
+
+
+    </article>
+
+{% endblock %}
