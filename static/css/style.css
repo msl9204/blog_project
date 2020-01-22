@@ -64,6 +64,21 @@ body{
     font-weight: bold;
 }
 
+.dropdown-content form {
+    display: block;
+}
+
+.dropdown-content form button {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    color: black;
+
+
+}
 
 .dropdown-content a:hover {
     background-color: #ddd;
